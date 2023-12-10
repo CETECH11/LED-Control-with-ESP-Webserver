@@ -15,11 +15,13 @@ The ESP32 add-on for the Arduino IDE
 ![alt text](https://hackster.imgix.net/uploads/attachments/1662480/image_LgOuqMfRfn.png?auto=compress%2Cformat&w=740&h=555&fit=max)
 
 How It Works
+
 The ESP32 will act as a web server that can serve HTML and CSS files to web clients (such as web browsers or smartphones). The web page will have a button that can send an HTTP request to the ESP32 to turn the LED on or off.
 
 The ESP32 will also handle the HTTP requests from the web clients and respond accordingly. For example, if the ESP32 receives a request to turn the LED on, it will set the GPIO pin connected to the LED to HIGH and send back a confirmation message.
 
 ESP32 Code
+
 The code for the ESP32 is also straightforward. You need to include the WiFi.h and ESPAsyncWebServer.h libraries, which are used to connect the ESP32 to the WiFi network and to create the web server.
 
 You also need to define the WiFi credentials, the GPIO pin for the LED, and the web server object. Then, you need to create a function to generate the HTML and CSS code for the web page, which will have a button to toggle the LED state.
@@ -140,6 +142,7 @@ void loop() {
 ```
 
 Testing the Web Server
+
 To test the web server, you need to upload the code to the ESP32 board and open the serial monitor. You should see the IP address of the ESP32, which is something like 192.168.1.8
 
 Then, you need to open a web browser on your computer or smartphone and enter the IP address of the ESP32. You should see the web page with the button to control the LED.
@@ -147,6 +150,7 @@ Then, you need to open a web browser on your computer or smartphone and enter th
 You can click the button to toggle the LED state and see the confirmation message on the web browser.
 
 Conclusion
+
 In this tutorial, you learned how to create a web server with ESP32 that can control an LED from any device connected to the same WiFi network. You learned how to use the WiFi.h and ESPAsyncWebServer.h libraries to connect the ESP32 to the WiFi network and to create the web server. You also learned how to generate the HTML and CSS code for the web page and how to handle the HTTP requests from the web clients.
 
 You can use this tutorial as a basis for your own projects that involve controlling GPIO pins or other devices with the ESP32 web server. You can also customize the web page design and functionality to suit your needs.
