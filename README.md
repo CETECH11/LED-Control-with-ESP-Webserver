@@ -32,6 +32,7 @@ The complete code is shown below:
 
 ![alt text](https://hackster.imgix.net/uploads/attachments/1662478/image_eIIfk3HXFU.png?auto=compress%2Cformat&w=740&h=555&fit=max)
 
+```
 #include <WiFi.h>
 #include <ESPAsyncWebServer.h>
 
@@ -136,6 +137,8 @@ void setup() {
 void loop() {
   // Nothing to do here
 }
+```
+
 Testing the Web Server
 To test the web server, you need to upload the code to the ESP32 board and open the serial monitor. You should see the IP address of the ESP32, which is something like 192.168.1.8
 
